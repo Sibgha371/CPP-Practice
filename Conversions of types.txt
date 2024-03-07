@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	char character = 'X';
+	int integer = character;
+	cout << character << " " << static_cast<int>(character);
+	cout << " " << integer << " " << static_cast<char>(integer);
+}
+output is:
+
+X 88 88 X
+
+explain:
+
+We’ll discuss the conversions later, but for now we only want 
+to mention that a phrase written as:
+
+static_cast<newtype>(expr)
+
+changes the type of the expr expression into the newtype type.
+
+What it means is that we can see the ASCII code of any character
+ stored within a char variable and vice versa, or see a character 
+whose ASCII code is placed inside an int variable.

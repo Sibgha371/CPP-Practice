@@ -1,0 +1,22 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	int byte = 255;
+	cout << setbase(16) << byte;
+}
+
+/////////
+10 → dec
+16 → hex
+ 8 → oct
+
+////////
+
+
+The program in the editor demonstrates the usage of the setbase manipulator.
+
+Note: it requires a header file called iomanip (the three previous manipulators don’t).
